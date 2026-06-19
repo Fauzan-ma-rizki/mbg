@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Engagement, Citut! 💍</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe5e5 0%, #ffb3c6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #4a4a4a;
+            overflow-x: hidden;
+        }
+
+        /* Floating Animation Background */
+        .bg-shapes {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 2rem;
+            animation: float 6s infinite ease-in-out;
+        }
+        .heart:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+        .heart:nth-child(2) { top: 70%; left: 80%; animation-delay: 2s; font-size: 3rem; }
+        .heart:nth-child(3) { top: 40%; left: 10%; animation-delay: 4s; font-size: 1.5rem; }
+        .heart:nth-child(4) { top: 80%; left: 30%; animation-delay: 1s; font-size: 2.5rem; }
+        .heart:nth-child(5) { top: 20%; left: 70%; animation-delay: 3s; font-size: 2rem; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.1); }
+        }
+
+        /* Glassmorphism Card container */
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.4);
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #d85a7f;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #8c8c8c;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* List Styling */
+        .wishes-list {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .wishes-list li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .wishes-list li strong {
+            color: #d85a7f;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            background: rgba(216, 90, 127, 0.1);
+            border-left: 5px solid #d85a7f;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 10px 10px 0;
+            text-align: left;
+        }
+
+        /* Footer & Button */
+        .footer-text {
+            font-weight: 600;
+            margin-top: 30px;
+            color: #d85a7f;
+        }
+        .ring-icon {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .card { padding: 25px; }
+            h1 { font-size: 2.8rem; }
+            p, .wishes-list li { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Decorative Hearts -->
+    <div class="bg-shapes">
+        <div class="heart">🤍</div>
+        <div class="heart">💍</div>
+        <div class="heart">✨</div>
+        <div class="heart">🤍</div>
+        <div class="heart">✨</div>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="card">
+        <div class="ring-icon">💍</div>
+        <h1>Happy Engagement!</h1>
+        <div class="subtitle">For The Beautiful Bride-To-Be, Citut</div>
+
+        <p>Wah gila sih, masih <em>speechless</em> dan terharu banget. Rasanya baru kemaren kita ngobrol ngalor-ngidul soal jodoh dan masa depan, eh sekarang kamu udah resmi dilamar dan selangkah lebih dekat menuju pelaminan. Selamat ya, Citut! 💖</p>
+
+        <h3 style="color: #d85a7f; margin-top: 25px; text-align: left;">✨ Sangat Amat Pantas Bahagia</h3>
+        <p>Ngeliat kamu akhirnya ada di titik ini bener-bener bikin aku ikutan <em>happy</em> luar biasa. Kamu itu orang yang baik banget, dan kamu sangat amat pantas dapet semua kebahagiaan ini. Akhirnya perjalanan panjang kamu berlabuh di orang yang tepat. <em>I’m beyond happy and proud of you!</em></p>
+
+        <h3 style="color: #d85a7f; margin-top: 25px; text-align: left;">🌸 Doa Terbaik Buat Kalian</h3>
+        <ul class="wishes-list">
+            <li><strong>Lancar sampai Hari-H:</strong> Semoga segala niat baik kalian dipermudah, dilancarkan rezekinya, dan dijauhkan dari drama-drama vendor!</li>
+            <li><strong>Makin Kompak:</strong> Semoga makin solid, makin sabar satu sama lain, dan bisa nyelesaiin setiap beda pendapat dengan kepala dingin.</li>
+            <li><strong>Jaga Kesehatan:</strong> Tolong jangan sampai kecapean mikirin printilan nikahan. Fisik dan mental harus tetep nomor satu!</li>
+        </ul>
+
+        <blockquote>
+            "Selamat menikmati fase baru ini ya, Citut. Nikmati setiap momen deg-degannya, ribetnya, sampai bahagia puncaknya nanti di hari pernikahan kalian."
+        </blockquote>
+
+        <p>Pokoknya kalau butuh temen curhat soal persiapan nikah, butuh pelarian pas lagi pusing ngurus <em>guest list</em>, atau sekadar mau ngopi cantik buat <em>healing</em>, <em>just let me know</em>. Aku selalu siap sedia!</p>
+
+        <p class="footer-text">Lancar-lancar persiapannya, Citut!<br>Can't wait to see you in your beautiful wedding dress! 🥂✨</p>
+    </div>
+
+</body>
+</html>
